@@ -1,15 +1,15 @@
 import { NavigationContainer } from "@react-navigation/native";
-import { StyleSheet, View } from "react-native";
-import Saludar from "./src/components/Saludar";
+import { StyleSheet } from "react-native";
+import NavigationDrawer from "./src/navigation/NavigationDrawer";
+import NavigationStack from "./src/navigation/NavigationStack";
+import NavigationTab from "./src/navigation/NavigationTab";
 
 export default function App() {
   return (
     <NavigationContainer>
-      <View style={styles.container}>
-        <Saludar firsName="Carlos" lastName="Quintero" />
-        <Saludar firsName="Jaime" lastName="Ospina" />
-        <Saludar firsName="r" />
-      </View>
+      {/* <NavigationStack /> */}
+      {/* <NavigationTab/> */}
+      <NavigationDrawer/>
     </NavigationContainer>
   );
 }
